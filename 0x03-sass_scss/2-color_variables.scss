@@ -1,0 +1,15 @@
+/* My style */
+$primary_color: #3d3d3d;
+$h2_color: #6d6d6d;
+body {
+    color: $primary_color;
+    background-color: $h2_color;
+}
+
+p {
+    color: $primary_color;
+}
+
+h2 {
+    background-color: $h2_color;
+}

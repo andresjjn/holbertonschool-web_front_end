@@ -1,0 +1,15 @@
+/* Use extend to style classes */
+%info-size {
+    font-size: 12px;
+}
+.info {
+    @extend %info-size;
+}
+.success {
+    @extend %info-size;
+    color: #00ff00;
+}
+.warning {
+    @extend %info-size;
+    color: #ff0000;
+}

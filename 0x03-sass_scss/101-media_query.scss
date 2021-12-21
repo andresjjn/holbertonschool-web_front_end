@@ -1,0 +1,11 @@
+/* My style */
+$big_font: 20px;
+$small_font: 14px;
+h1 {
+    font-size: $big_font;
+    @media screen and (max-width: 320px) {
+        & {
+            font-size: $small_font;
+        }
+    }
+}

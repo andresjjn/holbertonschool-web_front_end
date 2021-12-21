@@ -1,0 +1,9 @@
+/* My style */
+$gray: #3D3D3D;
+$red: #ff0000;
+body {
+    color: $gray;
+    .red {
+        color: $red;
+    }
+}
