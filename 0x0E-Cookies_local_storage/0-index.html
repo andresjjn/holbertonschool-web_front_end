@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 0</title>
+    <script>
+        let firstNameCookie;
+        let emailCookie;
+        let firstNameValue;
+        let emailValue;
+        function setCookies() {
+            firstNameValue = document.getElementById('firstname').value;
+            emailValue = document.getElementById('email').value;
+            firstNameCookie = document.cookie = `firstname=${firstNameValue}`
+            emailCookie = document.cookie = `email=${emailValue}`
+        }
+        function showCookies(params) {
+            let paragraph = document.createElement('p');
+            let paragraphContent = document.createTextNode(`Cookies: ${firstNameCookie} ${emailCookie}`);
+            paragraph.appendChild(paragraphContent);
+            document.body.appendChild(paragraph);
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" name="firstname" id="firstname">
+    <input type="text" name="email" id="email">
+    <button onclick="setCookies()">Log me in</button>
+    <button onclick="showCookies()">Show the cookies</button>
+</body>
+
+</html>
